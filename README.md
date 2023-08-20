@@ -33,10 +33,9 @@ You will have to adjust the switch_pin depending on how it is wired, and the typ
 
 ```toml
 # Voron 2.4, BTT Octopus v1.1
- [filament_switch_sensor RunoutSensor]
-    pause_on_runout: False
-    detection_length: 5.0
-    runout_gcode: PAUSE
-    insert_gcode: RESUME
-    switch_pin: !PG11
+[filament_switch_sensor RunoutSensor]
+pause_on_runout: False
+runout_gcode: PAUSE
+#insert_gcode: RESUME
+switch_pin: ^PG11
 ```
